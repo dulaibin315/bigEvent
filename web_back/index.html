@@ -44,7 +44,7 @@
         <div class="user_center_link">
             <a href="user.html" onclick="setMenu(3,0)" target="main_frame">个人中心</a>
             <img src="images/2.jpg" alt="person">
-            <a href="#"><i class="iconfont icon-tuichu"></i> 退出</a>
+            <a href="javascript:;" id="logOut"><i class="iconfont icon-tuichu"></i> 退出</a>
         </div>
     </div>
 
@@ -55,6 +55,8 @@
 
 
     <script>
+
+        
         var $level01 = $('.level01');
         var $subli = $('.level02 li')
         $level01.click(function(){
@@ -103,6 +105,10 @@
         }
 
     </script>
-
+    <script src="js/untils/url.js"></script>
+    <script src="js/untils/user.js"></script>
+    <script src="js/views/logout.js"></script>
+    <script src="js/views/getuser.js"></script>
+    
 </body>
 </html>
