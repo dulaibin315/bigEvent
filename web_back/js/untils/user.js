@@ -45,5 +45,28 @@ var user = {
                 fn(res)
             }
         )
+    },
+
+    userPerson:function(fn) {
+        $.get(
+            urlObj.userPerson,
+            function(res) {
+                fn(res)
+            }
+        )
+    },
+
+    userPerson_edit:function(fd,fn) {
+        $.ajax({
+            url:urlObj.userPerson_edit,
+            type:'post',
+            contentType:false,
+            processData:false,
+            data:fd,
+            success:function(res) {
+                fn(res)
+            }
+        })
     }
+
 }
